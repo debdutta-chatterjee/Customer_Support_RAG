@@ -1,0 +1,16 @@
+astradb:
+  collection: "product_data"
+  keyspace: "default_keyspace"
+
+embedding-model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+retriever:
+  k: 5
+
+llm:
+  provider: "google"
+  model_name: "gemini-2.5-flash"
+  max_tokens: 4096
+  temparature: 0.5

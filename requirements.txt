@@ -1,0 +1,10 @@
+Ipykernel
+PyYAML
+dotenv
+langchain_google_genai
+langchain
+setuptools
+langchain_astradb
+pandas
+
+-e .
