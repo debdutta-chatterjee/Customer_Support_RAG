@@ -7,6 +7,8 @@ setuptools
 langchain_astradb
 pandas
 streamlit
-
+uvicorn
+fastapi
+python-multipart
 
 -e .

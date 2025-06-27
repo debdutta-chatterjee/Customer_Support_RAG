@@ -2,3 +2,6 @@
 # explore usage of e-.
 #implement max token
 #chunking
+#multipart upload of csv
+#mongodb data store
+#logging
