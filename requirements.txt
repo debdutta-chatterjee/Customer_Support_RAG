@@ -6,5 +6,7 @@ langchain
 setuptools
 langchain_astradb
 pandas
+streamlit
+
 
 -e .
