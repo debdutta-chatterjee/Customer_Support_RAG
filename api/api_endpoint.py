@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/get",response_class=HTMLResponse)
+@app.get("/get_response")
 async def chat(query:str=Form(...)):
     
     try:
