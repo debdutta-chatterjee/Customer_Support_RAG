@@ -1,7 +1,8 @@
 #Implement code to accept any llm based on yaml
-# explore usage of e-.
+# explore usage of e-. check
 #implement max token
 #chunking
 #multipart upload of csv
 #mongodb data store
-#logging
+#logging - add in all classes
+#better ui

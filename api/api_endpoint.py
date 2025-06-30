@@ -1,5 +1,5 @@
 import uvicorn
-from fastapi import FastAPI, Request, Form, HTTPException
+from fastapi import FastAPI, Request, Form, HTTPException, Query
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,14 +21,12 @@ app.add_middleware(
 )
 
 @app.get("/generate")
-async def chat(query:str=Form(...)):
-    
+async def chat(query: str = Query(..., description="User query string")):
     try:
-        result=response = GenerateResponse().generate_response(query)
-        print(f"Response: {result}")
+        result = GenerateResponse().generate_response(query)
         return JSONResponse(
             status_code=200,
-            content={"response": result}
+            content={"answer": result}
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
